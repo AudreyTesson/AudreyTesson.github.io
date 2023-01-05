@@ -1,0 +1,192 @@
+.containerProgress {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+}   
+
+.containerProgress .card {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    /* background: #2a2a2a; */
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+
+.containerProgress .card:hover {
+    box-shadow: 9.9px 9.9px 15px #d9dade,
+    -9.9px -9.9px 15px #ffffff,
+    inset 9.9px 9.9px 15px #d9dade,
+    inset -9.9px -9.9px 15px #ffffff;
+    /* background: var(--blue); */
+    /* border: 4px solid var(--blue);   */
+}
+
+.containerProgress .card .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.containerProgress .card .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+.containerProgress .card .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 4;
+    /* stroke: #191911; */
+    stroke: var(--grey);
+    transform: translate(5px,5px);
+}
+
+.containerProgress .card .percent svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 1;
+    /* animation: fadeIn 1s linear forwards; */
+    /* animation-delay: 2s; */
+    animation-fill-mode: forwards;
+}
+
+/* ESSAI */
+
+.containerProgress .card:hover .percent svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 1;
+    animation: fadeIn 3s linear forwards;
+    /* animation-delay: 0s; */
+    animation-fill-mode: forwards;
+  }
+  
+  .containerProgress .card:hover .dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform: rotate(calc(3.6deg * var(--num)));
+    /* 360deg / 100 = 3.6 */
+    animation: animateDot 1s linear forwards;
+    /* animation-delay: 0s; */
+}
+  
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform: rotate(calc(3.6deg * var(--num)));
+    /* 360deg / 100 = 3.6 */
+    /* animation: animateDot 2s linear forwards; */
+}
+
+@keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 60px;
+    /* left: 50px; */
+    /* transform: translateX(-50%); */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+}
+
+.number {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    /* animation: fadeIn 1s linear forwards;
+    animation-delay: 2s; */
+}
+
+.number h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+    color: var(--black1);
+    font-weight: 700;
+    font-size: 2em;
+    padding: 0;
+    /* padding-bottom: 8px; */
+}
+
+.number h2 span {
+    font-weight: 300;
+    /* color: #fff; */
+    color: var(--black1);
+    font-size: 0.5em;
+}
+
+.number p {
+    font-weight: 300;
+    font-size: 1em;
+    /* letter-spacing: 2px; */
+    text-transform: uppercase;
+    /* color: rgba(255, 255, 255, 0.75); */
+    color: var(--clr);
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+/* .card:hover .iconBx, */
+.card:hover .number {
+    color: var(--clr);
+}
+
+/* .card .number{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: var(--black2);
+} */
+
+.card .number .iconBx {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

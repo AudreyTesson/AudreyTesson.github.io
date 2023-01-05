@@ -1,0 +1,241 @@
+/* .workTimeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+  
+.workTimeline .workCard {
+    grid-column: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+.workTimeline .workCard:nth-child(odd) {
+    grid-column: 2;
+  }
+  
+.workTimeline .workCard.visible {
+    opacity: 1;
+  }
+
+.workCard {
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+
+.workCard:hover {
+    box-shadow: 9.9px 9.9px 15px #d9dade,
+    -9.9px -9.9px 15px #ffffff,
+    inset 9.9px 9.9px 15px #d9dade,
+    inset -9.9px -9.9px 15px #ffffff;
+}
+
+.workCard:hover .missions,
+.workCard:hover .lieu {
+    color: var(--blue);
+}
+
+
+.workCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workCard .date {
+    position: relative;
+    left: -10px;
+    font-weight: 500;
+    font-size: 1em;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.workCard .name {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--black2);
+}
+
+.workCard .lieu {
+    margin-bottom: 15px;
+}
+
+.workCard .missions {
+    text-align: justify;
+}
+
+.workCard:hover .date {
+    color: #4d5bf9;
+    background: var(--white);
+}
+ */
+
+
+.box-timeline {
+    width: 100%;
+    height: 1500px;
+    /* background: #f1f1f1; */
+    position: relative;
+    padding: 80px 0 250px 0;
+    /* margin-bottom: 100px; */
+}
+
+.ligne {
+    height: 1000px;
+    width: 8px;
+    margin: 0 auto;
+    /* background: #333; */
+    background: var(--blue);
+    /* border: 4px solid var(--blue);   */
+}
+
+.rond {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* background: #333; */
+    background: var(--white);
+    position: absolute;
+    /* border: 1px solid #000; */
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border: 4px solid var(--blue);
+}
+/* 1000 - 160 + 80 / 3 =~ 306 */
+.r1,.r5{top: 80px;}
+.r2,.r6{top: 386px;}
+.r3,.r7{top: 692px;}
+.r4,.r8{top: 1000px;}
+
+.workCard {
+    color: #333;
+    width: 400px;
+    min-height: 200px;
+    padding: 30px;
+    border-radius: 20px;
+    height: auto;
+    /* background: #f1f1f1; */
+    background: var(--white);
+    /* box-shadow: 0 10px 15px rgba(0,0,0,0.5); */
+    /* box-shadow: 9.9px 9.9px 15px #d9dade,
+    -9.9px -9.9px 15px #ffffff; */
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 4px solid var(--white);  
+    /* z-index: 1; */
+}
+
+.b1,
+.b5 {
+    top: 80px;
+    left: calc(50% - 270px);
+}
+.b2,
+.b6 {
+    top: 386px;
+    left: calc(50% + 270px);
+}
+.b3,
+.b7 {
+    top: 692px;
+    left: calc(50% - 270px);
+}
+.b4,
+.b8 {
+    top: 1000px;
+    left: calc(50% + 270px);
+}
+
+.workCard p {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+.btn {
+    display: block;
+    background: midnightblue;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.workCard .date {
+    position: relative;
+    left: -10px;
+    font-weight: 500;
+    font-size: 1em;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.workCard .name {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--black2);
+}
+
+.workCard .lieu {
+    margin-bottom: 15px;
+}
+
+.workCard .missions {
+    text-align: justify;
+}
+
+.workCard:hover {
+    box-shadow: 9.9px 9.9px 15px #d9dade,
+    -9.9px -9.9px 15px #ffffff,
+    inset 9.9px 9.9px 15px #d9dade,
+    inset -9.9px -9.9px 15px #ffffff;
+    border: 4px solid var(--blue);  
+}
+
+@media screen and (max-width: 1000px) {
+
+    .ligne {
+        position: relative;
+        left: 200px;
+    }
+    .rond {
+        left: calc(50% + 200px);
+    }
+    .workCard {
+        left: calc(50% - 50px);
+        max-height: 280px;
+    }
+
+}
+
+/* DIPLOMES FORMATIONS */
+
