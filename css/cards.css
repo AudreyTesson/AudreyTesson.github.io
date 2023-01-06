@@ -4,6 +4,7 @@
     width: 100%;
     padding: 20px;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 30px;
 }
@@ -92,6 +93,3 @@
 .skill .skillCard:hover .iconBx {
     color: var(--clr);
 }
-
-/* .skill .skillCard:hover:nth-child(4) .iconBx {
-    /* color: var(--black2); */

@@ -1,18 +1,18 @@
-let list = document.querySelectorAll(".navigation li");
-function activeLink() {
-  list.forEach((item) => item.classList.remove("hovered"));
-  this.classList.add("hovered");
-}
-list.forEach((item) => item.addEventListener("mouseover", activeLink));
+// let list = document.querySelectorAll(".navigation li");
+// function activeLink() {
+//   list.forEach((item) => item.classList.remove("hovered"));
+//   this.classList.add("hovered");
+// }
+// list.forEach((item) => item.addEventListener("mouseover", activeLink));
 
-let toggle = document.querySelector(".toggle");
-let navigation = document.querySelector(".navigation");
-let main = document.querySelector(".main");
+// let toggle = document.querySelector(".toggle");
+// let navigation = document.querySelector(".navigation");
+// let main = document.querySelector(".main");
 
-toggle.onclick = function () {
-  navigation.classList.toggle("active");
-  main.classList.toggle("active");
-};
+// toggle.onclick = function () {
+//   navigation.classList.toggle("active");
+//   main.classList.toggle("active");
+// };
 
 
 
@@ -68,32 +68,27 @@ allBoxes.forEach(workCard => {
 //    }
 // });
 
-const button = document.querySelector('button');
-const hiddenText = document.querySelector('.hidden-text');
-const workCard = document.querySelector('.workCard');
+// const button = document.querySelector('button');
+// const hiddenText = document.querySelector('.hidden-text');
+// const workCard = document.querySelector('.workCard');
 
-button.addEventListener('click', function() {
-   if (hiddenText.style.display === 'none') {
-    workCard.style.display = 'block';
-      hiddenText.style.display = 'block';
-      // workCard.style.height = window.innerHeight + '300px';
-      // workCard.style.width = window.innerWidth + '300px';
-      workCard.style.zIndex = '999';
-      button.textContent = 'Réduire';
-   } else {
-      hiddenText.style.display = 'none';
-      // workCard.style.height = '400px';
-      // workCard.style.width = '400px';
-      workCard.style.zIndex = '1';
-      button.textContent = 'En savoir plus';
-   }
-});
+// button.addEventListener('click', function() {
+//    if (hiddenText.style.display === 'none') {
+//     workCard.style.display = 'block';
+//       hiddenText.style.display = 'block';
+//       workCard.style.zIndex = '999';
+//       button.textContent = 'Réduire';
+//    } else {
+//       hiddenText.style.display = 'none';
+//       workCard.style.zIndex = '1';
+//       button.textContent = 'En savoir plus';
+//    }
+// });
 
 
-document.addEventListener('click', function(event) {
-  if (!workCard.contains(event.target) && workCard.style.display === 'block') {
-    //  workCard.style.display = 'none';
-     hiddenText.style.display = 'none';
-     button.textContent = 'Cliquez ici pour afficher le conteneur';
-  }
-});
+// document.addEventListener('click', function(event) {
+//   if (!workCard.contains(event.target) && workCard.style.display === 'block') {
+//      hiddenText.style.display = 'none';
+//      button.textContent = 'Cliquez ici pour afficher le conteneur';
+//   }
+// });
