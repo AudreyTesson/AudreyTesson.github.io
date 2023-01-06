@@ -1,15 +1,87 @@
-.containerProgress {
+.frontend-card,
+.backend-card,
+.environment-card {
     position: relative;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4,1fr);
-    padding: 20px;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 20px; */
+    margin-bottom: 30px;
+    border-radius: 20px;
+    /* grid-template-columns: repeat(4,1fr); */
+    /* padding: 20px; */
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    /* margin-bottom: 20px; */
+    /* transition: 0.5s; */
+    /* gap: 40px; */
+    overflow: hidden;
+    /* background: var(--grey); */
+    background: var(--white);
+    /* box-shadow: 0 10px 15px rgba(0,0,0,0.5); */
+    /* box-shadow: 9.9px 9.9px 15px #d9dade,
+    -9.9px -9.9px 15px #ffffff; */
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border: 4px solid var(--white);  
 }   
 
-.containerProgress .card {
+.progress-card {
+    display: flex;
+    /* grid-template-columns: repeat(4,1fr); */
+    /* background: red; */
+    gap: 20px;
+    scale: 0.7;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden;
+    transform: translateY(60px);
+    transition: 0..5; */
+
+}
+
+/* .progress-card:hover{
+    transform: translateY(20px);
+} */
+
+
+.frontend-card h2,
+.backend-card h2,
+.environment-card h2{
+    color: var(--blue);
+    padding: 10px;
+    font-size: 2em;
+    /* font-size: 2em; */
+    /* transform: translateY(20px); */
+}
+
+.frontend-card:hover,
+.backend-card:hover,
+.environment-card:hover {
+    box-shadow: 9.9px 9.9px 15px #d9dade,
+    -9.9px -9.9px 15px #ffffff,
+    inset 9.9px 9.9px 15px #d9dade,
+    inset -9.9px -9.9px 15px #ffffff;
+    /* height: 300px; */
+    border: 4px solid var(--blue);  
+    transition:  0.5s;
+
+}
+
+/* .frontend-card:hover .progress-card,
+.backend-card:hover .progress-card,
+.environment-card:hover .progress-card {
+    transform: translateY(0px);
+    transition: 0.5s;
+} */
+
+.frontend-card .card,
+.backend-card .card,
+.environment-card .card{
     position: relative;
     width: 180px;
     height: 180px;
@@ -23,7 +95,9 @@
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
 }
 
-.containerProgress .card:hover {
+.frontend-card .card:hover,
+.backend-card .card:hover,
+.environment-card .card:hover{
     box-shadow: 9.9px 9.9px 15px #d9dade,
     -9.9px -9.9px 15px #ffffff,
     inset 9.9px 9.9px 15px #d9dade,
@@ -32,20 +106,26 @@
     /* border: 4px solid var(--blue);   */
 }
 
-.containerProgress .card .percent {
+.frontend-card .card .percent,
+.backend-card .card .percent,
+.environment-card .card .percent {
     position: relative;
     width: 150px;
     height: 150px;
 }
 
-.containerProgress .card .percent svg {
+.frontend-card .card .percent svg,
+.backend-card .card .percent svg,
+.environment-card .card .percent svg {
     position: relative;
     width: 150px;
     height: 150px;
     transform: rotate(270deg);
 }
 
-.containerProgress .card .percent svg circle {
+.frontend-card .card .percent svg circle,
+.backend-card .card .percent svg circle,
+.environment-card .card .percent svg circle {
     width: 100%;
     height: 100%;
     fill: transparent;
@@ -55,7 +135,9 @@
     transform: translate(5px,5px);
 }
 
-.containerProgress .card .percent svg circle:nth-child(2) {
+.frontend-card .card .percent svg circle:nth-child(2),
+.backend-card .card .percent svg circle:nth-child(2),
+.environment-card .card .percent svg circle:nth-child(2) {
     stroke: var(--clr);
     stroke-dasharray: 440;
     stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
@@ -67,7 +149,9 @@
 
 /* ESSAI */
 
-.containerProgress .card:hover .percent svg circle:nth-child(2) {
+.frontend-card .card:hover .percent svg circle:nth-child(2),
+.backend-card .card:hover .percent svg circle:nth-child(2),
+.environment-card .card:hover .percent svg circle:nth-child(2)  {
     stroke-dasharray: 440;
     stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
     opacity: 1;
@@ -76,7 +160,9 @@
     animation-fill-mode: forwards;
   }
   
-  .containerProgress .card:hover .dot {
+  .frontend-card .card:hover .dot,
+  .backend-card .card:hover .dot,
+  .environment-card .card:hover .dot {
     position: absolute;
     inset: 5px;
     z-index: 10;
@@ -85,7 +171,9 @@
     animation: animateDot 1s linear forwards;
     /* animation-delay: 0s; */
 }
-  
+
+
+
 
 @keyframes fadeIn {
     0% {
@@ -140,7 +228,7 @@
     animation-delay: 2s; */
 }
 
-.number h2 {
+.number h3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,7 +240,7 @@
     /* padding-bottom: 8px; */
 }
 
-.number h2 span {
+.number h3 span {
     font-weight: 300;
     /* color: #fff; */
     color: var(--black1);
