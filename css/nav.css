@@ -5,14 +5,8 @@
     width: 100%;
     height: 70px;
     background: var(--white);
-    /* opacity: 0.5; */
-    /* transition: .5s; */
-    /* overflow: hidden; */
-    /* border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px; */
     z-index: 40;
     padding: 5px;
-    /* top: 10px; */
 }
 
 .navigation ul {
@@ -25,23 +19,19 @@
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    /* background: red; */
     width: 180px;
     list-style: none;
-    /* border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px; */
+
 }
 
 .navigation ul li a {
     position: sticky;
-    /* display: block; */
     width: 100%;
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: var(--blue);
     border-radius: 20px;
-    /* box-shadow: 0 7px 25px rgba(0,0,0,0.08); */
     border: 4px solid var(--white);  
 }
 
@@ -50,9 +40,7 @@
     -9.9px -9.9px 15px #ffffff,
     inset 9.9px 9.9px 15px #d9dade,
     inset -9.9px -9.9px 15px #ffffff;
-    /* background: var(--blue); */
     border: 4px solid var(--blue);  
-    /* color: var(--white); */
 }
 
 .navigation ul li a .icon {
@@ -112,7 +100,6 @@
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
 }
 
-/* .toggle:hover, */
 .topbtn:hover {
     background: var(--blue);
     color: var(--white);
