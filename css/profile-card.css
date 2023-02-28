@@ -4,8 +4,6 @@
     max-width: 600px;
     height: 250px;
     border-radius: 20px;
-    /* box-shadow: 9.9px 9.9px 15px #d9dade,
-    -9.9px -9.9px 15px #ffffff; */
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
     transition: 0.5s;
     margin-left: auto;
@@ -86,9 +84,6 @@
 }
 
 .profile-card .profile-content .profile-details h3 {
-    /* font-size: 0.75em;
-    font-weight: 500;
-    opacity: 0.5; */
     display: flex;
     font-size: 2em;
     justify-content: center;
@@ -109,13 +104,6 @@
     color: var(--black2);
 }
 
-/* .profile-data .card:hover {
-    box-shadow: 9.9px 9.9px 15px #d9dade,
-    -9.9px -9.9px 15px #ffffff,
-    inset 9.9px 9.9px 15px #d9dade,
-    inset -9.9px -9.9px 15px #ffffff;
-} */
-
 .profile-data .card:hover .details,
 .profile-data .card:hover .details a,
 .profile-data .card:hover .iconBx  {
@@ -125,20 +113,17 @@
 .profile-data .card {
     position: relative;
     background: var(--white);
-    /* padding: 30px; */
     height: 30px;
     border-radius: 20px;
     display: flex;
     justify-content:flex-start;
     align-items: flex-end;
     cursor: pointer;
-    /* box-shadow: 0 7px 25px rgba(0,0,0,0.08); */
 }
 
 .profile-data .card .details,
 .profile-data .card .details a {
     position: relative;
-    /* margin: 0; */
     display: flex;
     justify-content: flex-start;
     align-self: center;
@@ -160,6 +145,12 @@
     justify-items: center;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 30px;
+}
+
+.profile-cardBox .iconBx a{
+text-decoration: none;
+color: var(--clr);
+
 }
 
 .flip-card {
@@ -194,7 +185,6 @@
 }
 
 .flip-card .iconBx {
-    /* background: var(--white); */
     display: flex;
     justify-content: center;
     font-size: 2.5em;
@@ -204,7 +194,7 @@
 }
 
 .flip-card .iconBx::before {
-    content: '';
+    /* content: ''; */
     position: absolute;
     top: 0;
     left: 0;
@@ -224,7 +214,8 @@
 }
 
 .flip-card:nth-child(1) .iconBx::before {
-    content: '\f08c';
+    /* content: '\f08c'; */
+    content: url('https://www.linkedin.com/in/audrey-tesson-dev/');
 }
 
 .flip-card:nth-child(2) .iconBx::before {
@@ -239,38 +230,11 @@
     content: '\f1c9';
 }
 
-/* .flip-card:hover {
-    box-shadow: 9.9px 9.9px 15px #d9dade,
-    -9.9px -9.9px 15px #ffffff,
-    inset 9.9px 9.9px 15px #d9dade,
-    inset -9.9px -9.9px 15px #ffffff;
-    transform: rotateY(180deg);
-    width: auto;
-    height: auto;
-    padding: 0;
-} */
-
 .flip-cardcard:hover .details,
 .flip-card:hover .details a {
     color: var(--blue);
 
 }
-
-/* HOVER */
-
-/* .flip-card .iconBx {
-    z-index: 1;
-    backface-visibility: hidden;
-    position: absolute;
-}
-
-.flip-card .details {
-    position: relative;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-} */
-
-/* ICONESHOVER */
 
 .hidden-text {
     display: none;
