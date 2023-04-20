@@ -21,6 +21,16 @@
     justify-content: center;
 }
 
+.details {
+    position: relative;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
 .aboutMe .details {
     display: flex;
     flex-direction: column;
@@ -33,14 +43,4 @@
     display: flex;
     font-size: 2em;
     justify-content: center;
-}
-
-.details {
-    position: relative;
-    width: 70%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 30px;
-    margin-top: 10px;
-    font-size: 1.5em;
 }
