@@ -1,0 +1,102 @@
+#portfolio,
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.filter,
+.filter-skills {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.filter-button,
+.filter-skills-button {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  border: 4px solid var(--violet);
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-button:hover,
+.filter-skills-button:hover {
+box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 20%);
+border: 4px solid var(--violet); 
+transition:  0.5s;
+}
+
+.filter-button.active,
+.filter-skills-button.active {
+  background-color: var(--violet);
+  color: #fff;
+}
+
+.projects,
+.hardskills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  width: 20%;
+  height: 200px;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  border: 4px solid var(--white);  
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 20%);
+  transition: all 0.3s ease-in-out;
+}
+
+.project:hover,
+.skills:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 20%);
+  border: 4px solid var(--violet); 
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-summary {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 75%);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project:hover .project-links {
+  opacity: 1; 
+}
