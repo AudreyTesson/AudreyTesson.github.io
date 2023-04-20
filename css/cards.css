@@ -22,7 +22,6 @@
     border: 4px solid var(--white);  
 }
 
-
 .skillCard {
     height: 80px;
     width: 250px;
@@ -39,7 +38,6 @@
     text-align: center;
     font-weight: 500;
     font-size: 1em;
-    /* color: var(--blue); */
     color: var(--violet);
     padding: 0;
 }
@@ -63,7 +61,6 @@
     -9.9px -9.9px 15px #ffffff,
     inset 9.9px 9.9px 15px #d9dade,
     inset -9.9px -9.9px 15px #ffffff;
-    /* background: var(--blue); */
     border: 4px solid var(--violet);  
     transition: 0.5s;
 }
@@ -73,7 +70,6 @@
 .cardBox .card:hover .iconBx,
 .aboutMe:hover .name,
 .aboutMe:hover .details,
-/* .loisirs:hover .details, */
 .skill .skillCard:hover .details {
     color: var(--violet);
 }

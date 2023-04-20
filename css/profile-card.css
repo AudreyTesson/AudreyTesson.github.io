@@ -14,10 +14,6 @@
 }
 
 .profile-card:hover {
-    box-shadow: 9.9px 9.9px 15px #d9dade,
-    -9.9px -9.9px 15px #ffffff,
-    inset 9.9px 9.9px 15px #d9dade,
-    inset -9.9px -9.9px 15px #ffffff;
     height: 700px;
     border: 4px solid var(--violet);  
 }
@@ -143,7 +139,7 @@
     display: grid;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
 }
 

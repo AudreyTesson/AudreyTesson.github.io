@@ -58,7 +58,6 @@
 .progress-card .card:hover{
     border: 4px solid var(--violet);  
     transition:  0.1s;
-
 }
 
 .frontend-card .card:hover,
