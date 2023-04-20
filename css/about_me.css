@@ -1,0 +1,48 @@
+.aboutMe {
+    position: relative;
+    width: 100%;
+    margin-top: -100px;
+    background-color: var(--violet);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    /* border: 4px solid var(--white);   */
+    color: var(--white);
+    z-index: -1;
+}
+
+.aboutMe .name {
+    font-weight: 600;
+    font-size: 2.5em;
+    /* color: var(--blue); */
+    color: var(--violet);
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe .details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.aboutMe .details h3 {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+}
+
+.details {
+    position: relative;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
