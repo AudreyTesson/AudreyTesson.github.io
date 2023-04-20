@@ -9,7 +9,6 @@
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
-    /* border: 4px solid var(--white);   */
     color: var(--white);
     z-index: -1;
 }
@@ -17,7 +16,6 @@
 .aboutMe .name {
     font-weight: 600;
     font-size: 2.5em;
-    /* color: var(--blue); */
     color: var(--violet);
     display: flex;
     justify-content: center;
