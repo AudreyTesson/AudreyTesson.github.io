@@ -1,5 +1,4 @@
-.cardBox,
-.skill {
+.cardBox {
     position: relative;
     width: 100%;
     padding: 20px;
@@ -9,8 +8,7 @@
     grid-gap: 30px;
 }
 
-.cardBox .card,
-.skill .skillCard {
+.cardBox .card {
     position: relative;
     background: var(--white);
     padding: 30px;
@@ -22,16 +20,10 @@
     border: 4px solid var(--white);  
 }
 
-.skillCard {
-    height: 80px;
-    width: 250px;
-}
-
 .cardBox .card .details,
-.cardBox .card .details a,
-.skill .skillCard .details {
+.cardBox .card .details a
+{
     position: relative;
-    /* margin: 0; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -46,8 +38,7 @@
     text-decoration: none;
 }
 
-.cardBox .card .iconBx,
-.skill .skillCard .iconBx {
+.cardBox .card .iconBx {
     display: flex;
     align-items: center;
     font-size: 2.5em;
@@ -55,8 +46,8 @@
 }
 
 .cardBox .card:hover,
-.aboutMe:hover,
-.skill .skillCard:hover {
+.aboutMe:hover
+{
     box-shadow: 9.9px 9.9px 15px #d9dade,
     -9.9px -9.9px 15px #ffffff,
     inset 9.9px 9.9px 15px #d9dade,
@@ -69,11 +60,7 @@
 .cardBox .card:hover .details a,
 .cardBox .card:hover .iconBx,
 .aboutMe:hover .name,
-.aboutMe:hover .details,
-.skill .skillCard:hover .details {
+.aboutMe:hover .details
+{
     color: var(--violet);
-}
-
-.skill .skillCard:hover .iconBx {
-    color: var(--clr);
 }
