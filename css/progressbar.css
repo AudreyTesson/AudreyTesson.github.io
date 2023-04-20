@@ -57,7 +57,7 @@
 
 .progress-card .card:hover{
     border: 4px solid var(--violet);  
-    transition:  0.1s;
+  transition: all 0.3s ease-in-out;
 }
 
 .frontend-card .card:hover,
@@ -67,6 +67,7 @@
     -9.9px -9.9px 15px #ffffff,
     inset 9.9px 9.9px 15px #d9dade,
     inset -9.9px -9.9px 15px #ffffff;
+    transform: translateY(-0.25rem);
 }
 
 .card img {
