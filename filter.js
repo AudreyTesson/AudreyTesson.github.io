@@ -1,50 +1,51 @@
-const filterButtons = document.querySelectorAll('.filter-button');
-const projects = document.querySelectorAll('.project');
+const filterButtons = document.querySelectorAll(".filter-button");
+const projects = document.querySelectorAll(".project");
 
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
     const filter = button.dataset.filter;
 
     // Change active button
-    filterButtons.forEach(button => {
-      button.classList.remove('active');
+    filterButtons.forEach((button) => {
+      button.classList.remove("active");
     });
-    button.classList.add('active');
+    button.classList.add("active");
 
     // Filter projects
-    projects.forEach(project => {
-      if (filter === 'all') {
-        project.style.display = 'block';
+    projects.forEach((project) => {
+      if (filter === "all") {
+        project.style.display = "block";
       } else {
-        project.classList.contains(filter) ? project.style.display = 'block' : project.style.display = 'none';
+        project.classList.contains(filter)
+          ? (project.style.display = "block")
+          : (project.style.display = "none");
       }
     });
   });
 });
 
+const filterSkillsButtons = document.querySelectorAll(".filter-skills-button");
+const hardskills = document.querySelectorAll(".skill");
 
-
-const filterSkillsButtons = document.querySelectorAll('.filter-skills-button');
-const hardskills = document.querySelectorAll('.skill');
-
-filterSkillsButtons.forEach(button => {
-  button.addEventListener('click', () => {
+filterSkillsButtons.forEach((button) => {
+  button.addEventListener("click", () => {
     const filter = button.dataset.filter;
 
     // Change active button
-    filterSkillsButtons.forEach(button => {
-      button.classList.remove('active');
+    filterSkillsButtons.forEach((button) => {
+      button.classList.remove("active");
     });
-    button.classList.add('active');
+    button.classList.add("active");
 
-    // Filter projects
-    hardskills.forEach(project => {
-      if (filter === 'all') {
-        project.style.display = 'block';
+    // Filter skills
+    hardskills.forEach((skill) => {
+      if (filter === "all") {
+        skill.style.display = "flex";
       } else {
-        project.classList.contains(filter) ? project.style.display = 'block' : project.style.display = 'none';
+        skill.classList.contains(filter)
+          ? (skill.style.display = "flex")
+          : (skill.style.display = "none");
       }
     });
   });
 });
-
