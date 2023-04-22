@@ -66,7 +66,6 @@ transition:  0.3s;
 .project .tag {
   position: relative;
   display: flex;
-  /* background-color: violet; */
 }
 
 .project .tag * {
@@ -76,6 +75,16 @@ transition:  0.3s;
   margin: 5px;
   font-size: small;
 }
+
+.project.expand {
+  height: 600px; /* ajustez la hauteur à votre convenance */
+}
+
+.project.expand * {
+  font-size: 1.2rem; /* ajustez la taille de police à votre convenance */
+  /* ajoutez d'autres propriétés CSS ici si nécessaire */
+}
+
 
 .project .tag .javascript {
   background-color: #F0DB4F;
