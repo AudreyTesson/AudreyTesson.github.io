@@ -1,6 +1,8 @@
 .aboutMe {
     position: relative;
-    width: 100%;
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: -100px;
     background-color: var(--violet);
     padding: 30px;
@@ -23,10 +25,9 @@
 
 .details {
     position: relative;
-    width: 70%;
+    width: 90%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 30px;
     margin-top: 10px;
     font-size: 1.5em;
 }
@@ -35,12 +36,77 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
 
 .aboutMe .details h3 {
     display: flex;
-    font-size: 2em;
+    font-size: 1.7em;
+    font-weight: 500;
     justify-content: center;
 }
+
+.aboutMe .details p {
+  font-size: 0.9em;
+}
+
+/*--------------DYNAMIC-TEXT--------------*/
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .static-txt{
+    color: var(--white);
+    margin: auto 0;
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    text-align: start;
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 1.7em;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--violet);
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }

@@ -63,6 +63,11 @@ transition:  0.3s;
   transition: all 0.3s ease-in-out;
 }
 
+.project:hover {
+  height: 500px;
+  
+}
+
 .project .tag {
   position: relative;
   display: flex;
@@ -76,14 +81,29 @@ transition:  0.3s;
   font-size: small;
 }
 
-.project.expand {
-  height: 600px; /* ajustez la hauteur à votre convenance */
-}
+/* .project .tag * {
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 2px solid var(--violet);
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+} */
 
-.project.expand * {
-  font-size: 1.2rem; /* ajustez la taille de police à votre convenance */
+
+/* .project.expand {
+  height: 600px;  */
+  /* ajustez la hauteur à votre convenance */
+/* } */
+
+/* .project.expand * {
+  font-size: 1.2rem;  */
+  /* ajustez la taille de police à votre convenance */
   /* ajoutez d'autres propriétés CSS ici si nécessaire */
-}
+/* } */
 
 
 .project .tag .javascript {
@@ -129,6 +149,18 @@ transition:  0.3s;
 .project-summary {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.project p {
+  height: 120px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.project p:hover {
+  height: 200px;
+  transition: all 0.3s ease-in-out;
 }
 
 .project-thumbnail {
