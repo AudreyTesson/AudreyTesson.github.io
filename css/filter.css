@@ -175,6 +175,11 @@ transition:  0.3s;
     width: 90%;
   }
 
+  #skills h2{
+    font-size: 1.4em;
+    text-align: center;
+  }
+
   .filter-button,
   .filter-skills-button  {
     width: 30%;

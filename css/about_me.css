@@ -80,6 +80,7 @@
     top: 0;
     animation: slide 12s steps(4) infinite;
   }
+
   @keyframes slide {
     100%{
       top: -360px;
@@ -102,11 +103,36 @@
     border-left: 2px solid #FC6D6D;
     animation: typing 3s steps(10) infinite;
   }
+
   @keyframes typing {
     40%, 60%{
       left: calc(100% + 30px);
     }
     100%{
       left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .profile-card,
+    .aboutMe {
+      width: 90%;
+      padding: 0;
+    }
+
+    .aboutMe .details h3 {
+        font-size: 1em;
+    }
+
+    .wrapper .static-txt {
+      font-size: 0.8em;
+    }
+
+    .wrapper .dynamic-txts li{
+      font-size: 0.8em;
+    }
+
+    .aboutMe .details p {
+      font-size: 0.6em;
     }
   }

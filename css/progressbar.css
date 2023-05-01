@@ -82,7 +82,7 @@
     }
 
     .skill h2 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .progress-card {
@@ -96,12 +96,6 @@
 
     .card img{
         width: 9em;
-    }
-  
-    .project .tag *{
-      font-size: 0.6em;
-      margin-right: 0;
-      margin-left: 0;
     }
   }
   
