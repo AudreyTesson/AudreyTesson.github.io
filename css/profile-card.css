@@ -232,5 +232,6 @@ color: var(--clr);
 .hidden-text {
     display: none;
     z-index: -1;
- }
- 
+}
+
+
