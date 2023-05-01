@@ -63,9 +63,12 @@ transition:  0.3s;
   transition: all 0.3s ease-in-out;
 }
 
-.project:hover {
-  height: 500px;
-  
+.project:first-child:hover{
+  height: 450px;
+}
+
+.project:nth-child(3):hover {
+  height: 470px;  
 }
 
 .project .tag {
@@ -79,32 +82,8 @@ transition:  0.3s;
   border-radius: 20px;
   margin: 5px;
   font-size: small;
+  color: #fff;
 }
-
-/* .project .tag * {
-  font-size: 0.8rem;
-  margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  background-color: #fff;
-  border: 2px solid var(--violet);
-  color: #000;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-} */
-
-
-/* .project.expand {
-  height: 600px;  */
-  /* ajustez la hauteur à votre convenance */
-/* } */
-
-/* .project.expand * {
-  font-size: 1.2rem;  */
-  /* ajustez la taille de police à votre convenance */
-  /* ajoutez d'autres propriétés CSS ici si nécessaire */
-/* } */
-
 
 .project .tag .javascript {
   background-color: #F0DB4F;
@@ -158,8 +137,13 @@ transition:  0.3s;
 
 }
 
-.project p:hover {
-  height: 200px;
+.project:first-child p:hover {
+  height: 160px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project:nth-child(3) p:hover {
+  height: 180px;
   transition: all 0.3s ease-in-out;
 }
 
