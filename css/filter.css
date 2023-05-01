@@ -171,7 +171,7 @@ transition:  0.3s;
 
 
 @media only screen and (max-width: 768px) {
-  #portfolio, #skills {
+  #portfolio {
     width: 90%;
   }
 

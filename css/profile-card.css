@@ -234,4 +234,13 @@ color: var(--clr);
     z-index: -1;
 }
 
+@media only screen and (max-width: 768px) {
+    .profile-card .profile-content .profile-details h2 {
+        font-size: 1.5em;
+    }
 
+    .profile-card .profile-content .profile-details h3 {
+        font-size: 1.5em;
+    }
+
+  }
