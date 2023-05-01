@@ -168,3 +168,35 @@ transition:  0.3s;
 .project:hover .project-links {
   opacity: 1; 
 }
+
+
+@media only screen and (max-width: 768px) {
+  #portfolio {
+    width: 90%;
+  }
+
+  #skills h2{
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .filter-button,
+  .filter-skills-button  {
+    width: 30%;
+    height: 3em;
+    font-size: 0.8em;
+    padding: 0.5em;
+  }
+
+  .project {
+    width: 90%;
+    height: 80%;
+    font-size: 0.8em;
+  }
+
+  .project .tag *{
+    font-size: 0.6em;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
