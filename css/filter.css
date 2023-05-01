@@ -175,11 +175,14 @@ transition:  0.3s;
     width: 90%;
   }
 
-  .filter-button {
+  .filter-button,
+  .filter-skills-button  {
     width: 30%;
+    height: 3em;
     font-size: 0.8em;
+    padding: 0.5em;
   }
-  
+
   .project {
     width: 90%;
     height: 80%;
