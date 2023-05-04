@@ -63,7 +63,8 @@ transition:  0.3s;
   transition: all 0.3s ease-in-out;
 }
 
-.project:first-child:hover{
+.project:first-child:hover,
+.project:nth-child(5):hover {
   height: 450px;
 }
 
@@ -137,7 +138,8 @@ transition:  0.3s;
 
 }
 
-.project:first-child p:hover {
+.project:first-child p:hover,
+.project:nth-child(5) p:hover {
   height: 160px;
   transition: all 0.3s ease-in-out;
 }
