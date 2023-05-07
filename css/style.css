@@ -1,10 +1,10 @@
 @import url('./about_me.css');
+@import url('./disclaimer.css');
 @import url('./filter.css');
 @import url('./profile-card.css');
 @import url('./nav.css');
-@import url('./cards.css');
-@import url('./progressbar.css');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 * {
     margin: 0;
@@ -33,10 +33,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     color: var(--violet);
-    padding-top: 80px;
-    padding-bottom: 60px;
+    /* padding-top: 1.2rem;
+    padding-bottom: 1.2rem; */
 }
 
 p {
@@ -47,57 +47,15 @@ p {
     padding-top: 150px;
 }
 
-.exp-container,
-.hardSkill-container,
-.softSkill-container {
-    grid-area: aboutMe;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-}
-
-.cardHeader {
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-start;
-}
-
-.cardHeader h2 {
-    font-weight: 600;
-    color: var(--violet);
-}
-
-.btn {
-    position: relative;
-    padding: 5px 10px;
-    background: var(--violet);
-    text-decoration: none;
-    color: var(--white);
-    border-radius: 6px;
-}
-
-
 /*responsive*/
 
 @media (max-width: 991px) {
-    .navigation {
-        width: 100%;
-    }
-    .navigation ul {
-        width: 100%;
-    }
+
     .main {
         width: 100%;
         left: 0;
     }
-    .cardBox,
-    .skill {
-        grid-template-columns: repeat(2,1fr);
-    }
+
 }
 
 @media (max-width: 768px) {
@@ -126,16 +84,4 @@ p {
     .navigation {
         width: 80%;
     }
-    /* .navigation.active {
-        width: 100%;
-        left: 0;
-    }
-    .toggle {
-        z-index: 10001;
-    }
-    .main.active .toggle {
-        position: fixed;
-        left: initial;
-        color: var(--white);
-    } */
 }

@@ -24,6 +24,13 @@
                 </a>
             </li>
             <li>
+                <a href="#portfolio">
+                    <span class="icon"></span>
+                    <i><ion-icon name="images-outline"></ion-icon></i>
+                    <span class="title">Portfolio</span>
+                </a>
+            </li>
+            <li>
                 <a href="#skills">
                     <span class="icon"></span>
                     <i><ion-icon name="briefcase-outline"></ion-icon></i>
@@ -31,10 +38,10 @@
                 </a>
             </li>
             <li>
-                <a href="#portfolio">
+                <a href="#disclaimer">
                     <span class="icon"></span>
-                    <i><ion-icon name="images-outline"></ion-icon></i>
-                    <span class="title">Portfolio</span>
+                    <i><ion-icon name="warning-outline"></ion-icon></i>
+                    <span class="title">Disclaimer</span>
                 </a>
             </li>
         </ul>
@@ -112,28 +119,140 @@
         </section>
 
         <section>
-            <div class="apropos-container">
-                <div class="aboutMe">
-                    <div class="details">
-                        <h3>Bonjour, ravie de vous rencontrer !</h3>
-                        <div class="wrapper">
-                            <div class="static-txt">Je suis une développeuse</div>
-                            <ul class="dynamic-txts">
-                                <li><span>Backend PHP</span></li>
-                                <li><span>Spé Symfony</span></li>
-                                <li><span>Frontend</span></li>
-                                <li><span>Agile</span></li>
-                            </ul>
+            <div class="aboutMe">
+                <div class="details">
+                    <h3>Bonjour, ravie de vous rencontrer !</h3>
+                    <div class="wrapper">
+                        <div class="static-txt">Je suis une développeuse</div>
+                        <ul class="dynamic-txts">
+                            <li><span>Backend PHP</span></li>
+                            <li><span>Spé Symfony</span></li>
+                            <li><span>Frontend</span></li>
+                            <li><span>Agile</span></li>
+                        </ul>
+                    </div>
+                    <p>Bienvenue dans mon univers fabuleux !<br>
+                        Passionnée par le Frontend, le Backend et les nouvelles technologies, je donne vie à vos
+                        maquettes, idées ou
+                        besoins.
+                </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="filter">
+                <button class="filter-button active" data-filter="all">Tous</button>
+                <button class="filter-button" data-filter="frontend">Frontend</button>
+                <button class="filter-button" data-filter="backend">Backend</button>
+            </div>
+            <div class="projects">
+                <div class="project frontend">
+                    <h3>Trip O'dviser</h3>
+                    <div class="video">
+                        <video controls width="100%">
+                            <source src="./images/previews/Trip O'dvisor.webm" type="video/webm">
+                        </video>
+                        <div class="text">Reprendre un projet déjà avancé, avec une intégration HTML/CSS.<br>
+                            Changer de mode (dark/light) puis de thème (rouge/vert/bleu).<br>
+                            Créer un slider fonctionnel, une modal newsletter contenant un filtre et messages d'erreurs
+                            en
+                            cas d'utilisation d'emails jetables.
                         </div>
-                        <p>Bienvenue dans mon univers fabuleux !<br>
-                            Passionnée par le Frontend, le Backend et les nouvelles technologies, je donne vie à vos maquettes, idées ou
-                            besoins.<br><br>
-                            DISCLAIMER :<br>
-                            Pour le moment, mon portfolio contient uniquement les projets réalisés au cours de ma formation de Développeur Web chez O'Clock, et est régulièrement mis à jour.<br>
-                            Pour des raisons de confidentialité et de droits d'auteurs, les noms de projets ne correspondent pas, certains contiennent une preview en vidéo, un résumé, ainsi que les techs utilisées. D'autres possèdent également un lien GitHub.
-                        </p>
+                    </div>
+                    <div class="tag">
+                        <span class="javascript">JavaScript</span>
+                        <span class="bootstrap">Bootstrap</span>
                     </div>
                 </div>
+                <div class="project backend">
+                    <h3>Game of Thrones</h3>
+                    <div class="video">
+                        <video controls width="100%">
+                            <source src="./images/previews/Game of Thrones.webm" type="video/webm">
+                        </video>
+                        <div class="text"">Créer les pages suivantes : accueil, un personnage, lister les maisons, lister les
+                        personnages des maisons.<br>
+                        Le tout de façon dynamique (contenu, couleurs), en établissant les relations via une BDD et en
+                        utilisant Laravel et Blade.
+                        </div>
+                    </div>
+                    <div class=" tag">
+                        <span class="laravel">Laravel</span>
+                        <span class="blade">Blade</span>
+                        <span class="php">PHP</span>
+                        <span class="phpmyadmin">phpMyAdmin</span>
+                    </div>
+                </div>
+                <div class="project backend">
+                    <h3>Pokédex</h3>
+                    <div class="video">
+                        <video controls width="100%">
+                            <source src="./images/previews/Pokédex.webm" type="video/webm">
+                        </video>
+                        <div class="text"">Créer un Pokédex en utilisant PHP, MySQL, HTML et CSS, Composer et AltoRouter.
+                        Créer la page d'accueil qui liste tous les pokémon de la BDD et une page détail d'un pokemon,
+                        comprenant ses stats et son type (couleur en fonction du type).
+                        Enfin, une page qui liste les types, qui redirige vers une page qui liste les pokémon filtrés par le type cliqué précédement.
+                        </div>
+                    </div>
+                    <div class=" tag">
+                        <span class="php">PHP</span>
+                        <span class="phpmyadmin">phpMyAdmin</span>
+                        <span class="mysql">MySQL</span>
+                    </div>
+                </div>
+                <div class="project frontend">
+                    <h3>Les APIs du monde</h3>
+                    <div class="video">
+                        <video controls width="100%">
+                            <source src="./images/previews/Les APIs du monde.webm" type="video/webm">
+                        </video>
+                        <div class="text"">Contacter une API REST avec JavaScript, traiter les données, filtrer pout n'aficher
+                        que les noms et drapeaux.<br>
+                        Ajouter un moteur de recherche de pays.
+                        </div>
+                    </div>
+                    <div class=" tag">
+                        <span class="javascript">JavaScript</span>
+                        <span class="api">API</span>
+                </div>
+                </div>
+                <div class="project backend">
+                    <h3>AuxShoes</h3>
+                    <div class="video">
+                        <video controls width="100%">
+                            <source src="./images/previews/AuxShoes.webm" type="video/webm">
+                        </video>
+                        <div class="text">Un client veut créer un site de e-commerce: une boutique en ligne
+                            de chaussures. Nom de code du
+                            projet : AuxShoes. Le client est en fait un groupement de plusieurs marques de
+                            chaussures qui ne
+                            sont pas encore présentes sur internet. Et ces marques ne souhaitent pas
+                            dépendre d'une autre
+                            société pour la distribution.
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <span class="php">PHP</span>
+                        <span class="mysql">MySQL</span>
+                        <span class="phpmyadmin">phpMyAdmin</span>
+                        <span class="bootstrap">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="project backend">
+                    <h3>Blog de devs</h3>
+                    <div class="video">
+                        <video controls width="100%">
+                            <source src="./images/previews/Blog de devs.webm" type="video/webm">
+                        </video>
+                        <div class="text">Résumé du projet 1
+                        </div>
+                    </div>
+                <div class="tag">
+                    <span class="php">PHP</span>
+                    <span class="bootstrap">Bootstrap</span>
+                </div>
+            </div>
         </section>
 
         <section id="skills">
@@ -146,155 +265,91 @@
             </div>
             <div class="hardskills">
                 <div class="skill frontend-card">
-                    <h2>Développeuse Frontend</h2>
+                    <h3>Développeuse Frontend</h3>
                     <div class="progress-card">
                         <div class="card">
                             <img src="./images/logos/html_original_wordmark_logo_icon_146478.png" alt="HTML5">
+                            <span class="text">HTML5</span>
                         </div>
                         <div class="card">
                             <img src="./images/logos/css_original_wordmark_logo_icon_146576.png" alt="CSS3">
+                            <span class="text">CSS3</span>
                         </div>
                         <div class="card">
                             <img src="./images/logos/javascript_original_logo_icon_146455.png" alt="JavaScript">
+                            <span class="text">JavaScript</span>
                         </div>
                         <div class="card">
                             <img src="./images/logos/bootstrap_plain_wordmark_logo_icon_146620.png" alt="Bootstrap">
+                            <span class="text">BootStrap</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill backend-card">
-                    <h2>Développeuse Backend</h2>
+                    <h3>Développeuse Backend</h3>
                     <div class="progress-card">
                         <div class="card">
                             <img src="./images/logos/file_type_php_icon_130266.png" alt="PHP">
+                            <span class="text">PHP</span>
                         </div>
                         <div class="card">
                             <img src="./images/logos/symfony_original_wordmark_logo_icon_146328.png" alt="Symfony">
+                            <span class="text">Symfony</span>
                         </div>
                         <div class="card">
                             <img src="./images/logos/mysql_original_wordmark_logo_icon_146417.png" alt="MySQL">
+                            <span class="text">MySQL</span>
                         </div>
                         <div class="card">
                             <img src="./images/logos/mariadb.png" alt="MariaDB">
+                            <span class="text">MariaDB</span>
                         </div>
                         <div class="card">
                             <img src="./images/logos/twig_ezno_default-fi10224206x470.png"
                                 style="width: 300px; height: auto;" alt="Twig">
+                                <span class="text">Twig</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill environment-card">
-                    <h2>Divers</h2>
+                    <h3>Divers</h3>
                     <div class="progress-card">
                         <div class="card">
                             <img src="./images/logos/github_original_wordmark_logo_icon_146506.png" alt="GitHub">
+                            <p class="text">GitHub</p>
                         </div>
                         <div class="card">
                             <img src="./images/logos/api_icon_129131.png" alt="API Rest">
+                            <p class="text">API Rest</p>
                         </div>
                         <div class="card">
                             <img src="./images/logos/agile (1).png" alt="Agile">
+                            <p class="text">Méthode Agile</p>
                         </div>
                         <div class="card">
                             <img src="./images/logos/scrum.png" alt="SCRUM">
+                            <p class="text">SCRUM</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION SLIDE AVEC FILTER -->
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="filter">
-                <button class="filter-button active" data-filter="all">Tous</button>
-                <button class="filter-button" data-filter="frontend">Frontend</button>
-                <button class="filter-button" data-filter="backend">Backend</button>
+
+
+        <section id="disclaimer">
+            <h2>Disclaimer</h2>
+            <div class="disclaimer">
+                <p>
+                    Pour le moment, mon portfolio contient uniquement les projets réalisés au cours de ma formation de
+                    Développeur Web chez O'Clock, et est régulièrement mis à jour.<br>
+                    Pour des raisons de confidentialité et de droits d'auteurs, les noms de projets ne correspondent
+                    pas,
+                    certains contiennent une preview en vidéo, un résumé, ainsi que les techs utilisées. D'autres
+                    possèdent
+                    également un lien GitHub.
+                </p>
             </div>
-            <div class="projects">
-                <div class="project frontend">
-                    <video controls width="100%">
-                        <source src="./images/previews/Trip O'dvisor.webm" type="video/webm">
-                    </video>
-                    <h3>Trip O'dviser</h3>
-                    <p class="text">Reprendre un projet déjà avancé, avec une intégration HTML/CSS.<br>
-                        Changer de mode (dark/light) puis de thème (rouge/vert/bleu).<br>
-                        Créer un slider fonctionnel, une modal newsletter contenant un filtre et messages d'erreurs en cas d'utilisation d'emails jetables.
-                    </p>
-                    <div class="tag">
-                        <span class="javascript">JavaScript</span>
-                        <span class="bootstrap">Bootstrap</span>
-                    </div>
-                </div>
-                <div class="project backend">
-                    <video controls width="100%">
-                        <source src="./images/previews/Game of Thrones.webm" type="video/webm">
-                    </video>
-                    <h3>Game of Thrones</h3>
-                    <p class="text">Créer les pages suivantes : accueil, un personnage, lister les maisons, lister les personnages des maisons.<br>
-                        Le tout de façon dynamique (contenu, couleurs), en établissant les relations via une BDD et en utilisant Laravel et Blade.
-                    </p>
-                    <div class="tag">
-                        <span class="laravel">Laravel</span>
-                        <span class="blade">Blade</span>
-                        <span class="php">PHP</span>
-                        <span class="phpmyadmin">phpMyAdmin</span>
-                    </div>
-                </div>
-                <div class="project backend">
-                    <video controls width="100%">
-                        <source src="./images/previews/Pokédex.webm" type="video/webm">
-                    </video>
-                    <h3>Pokédex</h3>
-                    <p class="text">Créer un Pokédex en utilisant PHP, MySQL, HTML et CSS, Composer et AltoRouter.
-                        Créer la page d'accueil qui liste tous les pokémon de la BDD et une page détail d'un pokemon,
-                        comprenant ses stats et son type (couleur en fonction du type).
-                        Enfin, une page qui liste les types, qui redirige vers une page qui liste les pokémon filtrés
-                        par le type cliqué précédement.
-                    </p>
-                    <div class="tag">
-                        <span class="php">PHP</span>
-                        <span class="phpmyadmin">phpMyAdmin</span>
-                        <span class="mysql">MySQL</span>
-                    </div>
-                </div>
-                <div class="project frontend">
-                    <video controls width="100%">
-                        <source src="./images/previews/Les APIs du monde.webm" type="video/webm">
-                    </video>
-                    <h3>Les APIs du monde</h3>
-                    <p class="text">Contacter une API REST avec JavaScript, traiter les données, filtrer pout n'aficher que les noms et drapeaux.<br>
-                        Ajouter un moteur de recherche de pays.
-                    </p>
-                    <div class="tag">
-                        <span class="javascript">JavaScript</span>
-                        <span class="api">API</span>
-                    </div>
-                </div>
-                <div class="project backend">
-                    <video controls width="100%">
-                        <source src="./images/previews/AuxShoes.webm" type="video/webm">
-                    </video>
-                    <h3>AuxShoes</h3>
-                    <p>Un client veut créer un site de e-commerce: une boutique en ligne de chaussures. Nom de code du projet : AuxShoes. Le client est en fait un groupement de plusieurs marques de chaussures qui ne sont pas encore présentes sur internet. Et ces marques ne souhaitent pas dépendre d'une autre société pour la distribution.</p>
-                    <div class="tag">
-                        <span class="php">PHP</span>
-                        <span class="mysql">MySQL</span>
-                        <span class="phpmyadmin">phpMyAdmin</span>
-                        <span class="bootstrap">Bootstrap</span>
-                    </div>
-                </div>
-                <div class="project backend">
-                    <video controls width="100%">
-                        <source src="./images/previews/Blog de devs.webm" type="video/webm">
-                    </video>
-                    <h3>Blog de devs</h3>
-                    <p>Résumé du projet 1</p>
-                    <div class="tag">
-                        <span class="php">PHP</span>
-                        <span class="bootstrap">Bootstrap</span>
-                    </div>
-                </div>
         </section>
 
     </div>
