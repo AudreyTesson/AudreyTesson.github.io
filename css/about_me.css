@@ -10,33 +10,28 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0,0,0,8%);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 8%);
     color: var(--white);
     z-index: -1;
 }
 
-.aboutMe:hover
-{
-  box-shadow: 9.9px 9.9px 15px #d9dade,
-  -9.9px -9.9px 15px #fff,
-  inset 9.9px 9.9px 15px #d9dade,
-  inset -9.9px -9.9px 15px #fff;
-  border: 4px solid var(--violet);  
-  transition: 0.3s;
+.aboutMe:hover {
+    box-shadow: 9.9px 9.9px 15px #d9dade, -9.9px -9.9px 15px #fff,
+        inset 9.9px 9.9px 15px #d9dade, inset -9.9px -9.9px 15px #fff;
+    border: 4px solid var(--violet);
+    transition: 0.3s;
 }
 
-
 .aboutMe .name {
-  /* font-weight: 600; */
-  font-size: 2.5rem;
-  color: var(--violet);
-  display: flex;
-  justify-content: center;
+    /* font-weight: 600; */
+    font-size: 2.5rem;
+    color: var(--violet);
+    display: flex;
+    justify-content: center;
 }
 
 .aboutMe:hover .name,
-.aboutMe:hover .details
-{
+.aboutMe:hover .details {
     color: var(--violet);
 }
 
@@ -64,95 +59,99 @@
 }
 
 .aboutMe .details p {
-  font-size: 1rem;
-  padding-top: 0;
+    font-size: 1rem;
+    padding-top: 0;
 }
 
 /*--------------DYNAMIC-TEXT--------------*/
 
-.wrapper{
-  display: flex;
-  justify-content: center;
+.wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-.wrapper .static-txt{
-  color: var(--white);
-  margin: auto 0;
-  font-size: 1.7rem;
-  font-weight: 400;
+.wrapper .static-txt {
+    color: var(--white);
+    margin: auto 0;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 
-.wrapper .dynamic-txts{
-  text-align: start;
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
+.wrapper .dynamic-txts {
+    text-align: start;
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
 }
 
-.dynamic-txts li{
-  list-style: none;
-  color: #FC6D6D;
-  font-size: 1.7rem;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
+.dynamic-txts li {
+    list-style: none;
+    color: #fc6d6d;
+    font-size: 1.7rem;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
 }
 
 @keyframes slide {
-  100%{
-    top: -360px;
-  }
+    100% {
+        top: -360px;
+    }
 }
 
-.dynamic-txts li span{
-  position: relative;
-  margin: 5px 0;
-  line-height: 90px;
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
 }
 
-.dynamic-txts li span::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: var(--violet);
-  border-left: 2px solid #FC6D6D;
-  animation: typing 3s steps(10) infinite;
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--violet);
+    border-left: 2px solid #fc6d6d;
+    animation: typing 3s steps(10) infinite;
 }
 
 @keyframes typing {
-  40%, 60%{
-    left: calc(100% + 30px);
-  }
-  100%{
-    left: 0;
-  }
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-  .profile-card,
-  .aboutMe {
-    width: 90%;
-    padding: 0;
-  }
 
-  .aboutMe .details h3 {
-      font-size: 0.9rem;
-  }
+    .profile-card,
+    .aboutMe {
+        width: 90%;
+        padding: 0;
+    }
 
-  .wrapper .static-txt {
-    font-size: 0.8rem;
-  }
+    .aboutMe .details h3 {
+        font-size: 0.9rem;
+    }
 
-  .wrapper .dynamic-txts li{
-    font-size: 0.8rem;
-  }
+    .wrapper .static-txt {
+        font-size: 0.8rem;
+    }
 
-  .aboutMe .details p {
-    font-size: 0.6rem;
-  }
+    .wrapper .dynamic-txts li {
+        font-size: 0.8rem;
+    }
+
+    .aboutMe .details p {
+        font-size: 0.6rem;
+    }
 }
