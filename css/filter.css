@@ -94,46 +94,91 @@
 }
 
 .project .tag * {
-    padding: 0.8rem;
+    padding: 0.5rem;
     margin-right: 0.5rem;
-    border: 2px solid;
+    border: 0.2rem solid;
     border-radius: 1.4rem;
-    /* margin: 5px; */
     font-size: small;
-    /* color: #fff; */
 }
 
 .project .tag .javascript {
+    color: #f0db4f;
+}
+
+.project .tag .javascript:hover {
+    color: var(--white);
     background-color: #f0db4f;
+    border: 0.2rem solid #f0db4f;
 }
 
 .project .tag .bootstrap {
+    color: #553c7b;
+}
+
+.project .tag .bootstrap:hover {
+    color: var(--white);
     background-color: #553c7b;
+    border: 0.2rem solid #553c7b;
 }
 
 .project .tag .laravel {
+    color: #f05340;
+}
+
+.project .tag .laravel:hover {
+    color: var(--white);
     background-color: #f05340;
 }
 
+
 .project .tag .blade {
+    color: #e42d27;
+}
+
+.project .tag .blade:hover {
+    color: var(--white);
     background-color: #e42d27;
+    border: 0.2rem solid #e42d27;
 }
 
 .project .tag .php {
+    color: #787cb5;
+}
+
+.project .tag .php:hover {
+    color: var(--white);
     background-color: #787cb5;
+    border: 0.2rem solid #787cb5;
 }
 
 .project .tag .phpmyadmin {
+    color: #f89c0e;
+}
+
+.project .tag .phpmyadmin:hover {
+    color: var(--white);
     background-color: #f89c0e;
+    border: 0.2rem solid #f89c0e;
 }
 
 .project .tag .mysql {
+    color: #00758f;
+}
+
+.project .tag .mysql:hover {
+    color: var(--white);
     background-color: #00758f;
+    border: 0.2rem solid #00758f;
 }
 
 .project .tag .api {
-    background-color: aliceblue;
-    color: #000;
+    color: var(--black1);
+}
+
+.project .tag .api:hover {
+    color: var(--white);
+    background-color: var(--black1);
+    border: 0.2rem solid var(--black1);
 }
 
 .project:hover,
