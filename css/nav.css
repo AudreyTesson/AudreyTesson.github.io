@@ -119,3 +119,41 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 768px) {
+    .navigation ul {
+        display: none;
+    }
+    
+    .toggle {
+        display: flex;
+    }
+
+    .toggle i {
+        font-weight: lighter; /* Ajuster le poids de la police (ex : normal, lighter, bold) */
+        color: var(--violet); /* Modifier la couleur de l'icône (ex : nom de couleur ou code hexadécimal) */
+    }
+    
+    .navigation.active ul {
+        display: block;
+        position: absolute;
+        top: 4rem;
+        width: 100%;
+        background-color: var(--white);
+        z-index: 50;
+        padding: 1rem 0;
+        border-radius: 1.4rem;
+        box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 20%);
+    }
+
+    .navigation.active ul li a {
+        border: none;
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .toggle {
+        display: none;
+    }
+}

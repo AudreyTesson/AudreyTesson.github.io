@@ -36,8 +36,18 @@
                     <span class="title">Disclaimer</span>
                 </a>
             </li>
+            <li>
+                <a href="#contact">
+                    <span class="title">Contact</span>
+                </a>
+            </li>
         </ul>
     </div>
+
+    <div class="toggle" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+
     <div class="main">
         <div class="topbtn">
             <a href="#index">
@@ -104,6 +114,12 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="flip-card" style="--clr:#6E07F3">
+                                <a href="./images/Audrey TESSON CV.pdf" download="./images/Audrey TESSON CV.pdf" target="_blank">
+                                    <div class="iconBx"><i class="fa fa-id-card-o" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,21 +139,50 @@
                             <li><span>Agile</span></li>
                         </ul>
                     </div>
-                    <p>Bienvenue dans mon univers fabuleux !<br>
-                        Passionnée par le Frontend, le Backend et les nouvelles technologies, je donne vie à vos
-                        maquettes, idées ou
-                        besoins.
+                    <p>Bienvenue dans mon univers captivant, aux possibiltés infinies !<br>
+                        En tant que développeur web junior, je suis une véritable passionnée du Frontend, du Backend et des nouvelles technologies. Je concrétise vos idées et concepts avec expertise et créativité. Plongez dans mon univers où l'innovation et l'esthétique se rencontrent pour offrir des expériences numériques uniques.
+                    </p>
                 </div>
+            </div>
         </section>
 
         <section id="portfolio">
             <h2>Portfolio</h2>
             <div class="filter">
                 <button class="filter-button active" data-filter="all">Tous</button>
+                <button class="filter-button" data-filter="important">En avant</button>
                 <button class="filter-button" data-filter="backend">Backend</button>
                 <button class="filter-button" data-filter="frontend">Frontend</button>
             </div>
             <div class="projects">
+                <div class="project frontend backend important">
+                    <h3><a href="https://github.com/AudreyTesson/New-O-rizon-clone/tree/main">New O'rizon</a></h3>
+                    <div class="video">
+                        <video controls width="100%">
+                            <source src="./images/previews/New O'rizon Page d'accueil.webm" type="video/webm">
+                        </video>
+                        <div class="text">Projet de fin de formation qui a duré 1 mois, réalisé en Agile avec les méthodes SCRUM et kanban.
+                            Nous étions 4 développeurs spécialisés Symfony, le tout fonctionne actuellement grâce à des fixtures (données fictives, afin de créer du contenu textuel). 
+                            <br><br>                                
+                            Il s'agit d'un site web destiné à aider les personnes souhaitant trouver un nouvel environnement pour travailler en remote.
+                            La sélection peut se faire par nom de ville, pays, critères (la météo, les besoins matériels ou physiques, les contraintes ou restrictions, etc).
+                            L'authentification / inscription est fonctionnelle afin de permettre aux membres de gérer les villes favorites de poster des commentaires et de noter des villes.
+                            Le backoffice permet de gérer facilement les contenus (villes, pays, images, utilisateurs, commentaires).
+                            <br><br>             
+                            <span class="working">                  
+                            Je travaille sur une version parallèle de ce site en passant à PHP 8 et Symfony 6, afin d'implémenter des composants Symfony UX tels que Live Components et Autocomplete.
+                            Etant fan de CSS avancé, je vais retirer Tailwind du front et effectuer une refonte complète du site avec CSS et JS.
+                            Je vais également concrétiser notre idée de base : faire appel à une API pour obtenir des données réelles sur les villes, pays et critères.
+                            </span>   
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <span class="symfony">Symfony</span>
+                        <span class="php">PHP</span>
+                        <span class="javascript">JavaScript</span>
+                        <span class="tailwind">Tailwind</span>
+                    </div>
+                </div>
                 <div class="project frontend">
                     <h3>Trip O'dviser</h3>
                     <div class="video">
@@ -162,7 +207,7 @@
                         <video controls width="100%">
                             <source src="./images/previews/Game of Thrones.webm" type="video/webm">
                         </video>
-                        <div class="text"">Créer les pages suivantes : accueil, un personnage, lister les maisons, lister les
+                        <div class="text">Créer les pages suivantes : accueil, un personnage, lister les maisons, lister les
                         personnages des maisons.<br>
                         Le tout de façon dynamique (contenu, couleurs), en établissant les relations via une BDD et en
                         utilisant Laravel et Blade.
@@ -181,7 +226,7 @@
                         <video controls width="100%">
                             <source src="./images/previews/Pokédex.webm" type="video/webm">
                         </video>
-                        <div class="text"">Créer un Pokédex en utilisant PHP, MySQL, HTML et CSS, Composer et AltoRouter.
+                        <div class="text">Créer un Pokédex en utilisant PHP, MySQL, HTML et CSS, Composer et AltoRouter.
                         Créer la page d'accueil qui liste tous les pokémon de la BDD et une page détail d'un pokemon,
                         comprenant ses stats et son type (couleur en fonction du type).
                         Enfin, une page qui liste les types, qui redirige vers une page qui liste les pokémon filtrés par le type cliqué précédement.
@@ -199,7 +244,7 @@
                         <video controls width="100%">
                             <source src="./images/previews/Les APIs du monde.webm" type="video/webm">
                         </video>
-                        <div class="text"">Contacter une API REST avec JavaScript, traiter les données, filtrer pout n'aficher
+                        <div class="text">Contacter une API REST avec JavaScript, traiter les données, filtrer pout n'aficher
                         que les noms et drapeaux.<br>
                         Ajouter un moteur de recherche de pays.
                         </div>
@@ -231,19 +276,6 @@
                         <span class="bootstrap">Bootstrap</span>
                     </div>
                 </div>
-                <div class="project backend">
-                    <h3>Blog de devs</h3>
-                    <div class="video">
-                        <video controls width="100%">
-                            <source src="./images/previews/Blog de devs.webm" type="video/webm">
-                        </video>
-                        <div class="text">Résumé du projet 1
-                        </div>
-                    </div>
-                <div class="tag">
-                    <span class="php">PHP</span>
-                    <span class="bootstrap">Bootstrap</span>
-                </div>
             </div>
         </section>
 
@@ -272,6 +304,10 @@
                             <span class="text">JavaScript</span>
                         </div>
                         <div class="card">
+                            <img src="./images/logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg" alt="Tailwind">
+                            <span class="text">Tailwind</span>
+                        </div>
+                        <div class="card">
                             <img src="./images/logos/bootstrap_plain_wordmark_logo_icon_146620.png" alt="Bootstrap">
                             <span class="text">BootStrap</span>
                         </div>
@@ -281,12 +317,12 @@
                     <h3>Développeuse Backend</h3>
                     <div class="progress-card">
                         <div class="card">
-                            <img src="./images/logos/file_type_php_icon_130266.png" alt="PHP">
-                            <span class="text">PHP</span>
-                        </div>
-                        <div class="card">
                             <img src="./images/logos/symfony_original_wordmark_logo_icon_146328.png" alt="Symfony">
                             <span class="text">Symfony</span>
+                        </div>
+                        <div class="card">
+                            <img src="./images/logos/file_type_php_icon_130266.png" alt="PHP">
+                            <span class="text">PHP</span>
                         </div>
                         <div class="card">
                             <img src="./images/logos/mysql_original_wordmark_logo_icon_146417.png" alt="MySQL">
@@ -321,6 +357,10 @@
                             <img src="./images/logos/scrum.png" alt="SCRUM">
                             <p class="text">SCRUM</p>
                         </div>
+                        <div class="card">
+                            <img src="./images/logos/kanban-lean-method-line-icon-vectoriel.jpg" alt="kanban">
+                            <p class="text">Kanban</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -330,6 +370,7 @@
             <h2>Disclaimer</h2>
             <div class="disclaimer">
                 <p>
+                    Vous pouvez survoler ma photo pour accéder aux informations de contact, les icones redirigent au click sur un nouvel onglet.<br>
                     Pour le moment, mon portfolio contient uniquement les projets réalisés au cours de ma formation de
                     Développeur Web chez O'Clock, et est régulièrement mis à jour.<br>
                     Pour des raisons de confidentialité et de droits d'auteurs, les noms de projets ne correspondent
@@ -341,6 +382,28 @@
             </div>
         </section>
 
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                    <a href="https://www.linkedin.com/in/audrey-tesson-dev/" target="_blank">
+                        <div class="iconBx">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/AudreyTesson" target="_blank">
+                        <div class="iconBx"><i class="fa fa-github" aria-hidden="true"></i>
+                        </div>
+                    </a>
+
+                    <a href="./images/Audrey TESSON CV.pdf" target="_blank">
+                        <div class="iconBx"><i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        </div>
+                    </a>
+
+            </div>
+        </section>
+
     </div>
 </body>
 
@@ -348,6 +411,7 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script src="./js/filter.js"></script>
+<script src="./js/toggle.js"></script>
 
 </body>
 

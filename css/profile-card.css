@@ -63,7 +63,7 @@
     flex-direction: column;
     width: 100%;
     transition: 0.5s;
-    transform: translateY(350px);
+    transform: translateY(330px);
 }
 
 .profile-card:hover .profile-content .profile-details {
@@ -76,13 +76,13 @@
     font-size: 3rem;
     color: var(--violet);
     padding-top: 1.0rem;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .profile-card .profile-content .profile-details h3 {
     display: flex;
+    margin-top: 1.5rem;
     font-size: 2.4rem;
-    /* padding-bottom: 1rem; */
     justify-content: center;
 }
 
@@ -91,7 +91,6 @@
     margin-bottom: 1.2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .profile-data .card .iconBx {
@@ -99,6 +98,7 @@
     align-items: center;
     font-size: 1.2rem;
     color: var(--black2);
+    padding-right: 0.5rem;
 }
 
 .profile-data .card:hover .details,
@@ -111,7 +111,6 @@
     position: relative;
     background: var(--white);
     height: 1.8rem;
-    /* border-radius: 1.2rem; */
     display: flex;
     justify-content:flex-start;
     align-items: flex-end;
@@ -123,7 +122,6 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-    align-self: center;
     font-weight: 500;
     font-size: 1rem;
     color: var(--black);
@@ -140,7 +138,7 @@
     display: grid;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 1.4rem;
 }
 
@@ -222,7 +220,7 @@
 }
 
 .flip-card:nth-child(4) .iconBx::before {
-    content: '\f1c9';
+    content: '\f2c3';
 }
 
 .flip-cardcard:hover .details,

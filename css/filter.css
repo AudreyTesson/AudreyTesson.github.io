@@ -57,8 +57,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 32%;
-    height: 29.5rem;
+    width: 49%;
+    height: 35rem;
     padding: 1rem;
     border-radius: 1.4rem;
     background-color: #fff;
@@ -76,15 +76,23 @@
     color: var(--violet);
 }
 
-.project:nth-child(3):hover {
-    height: 30.5em;  
+.project .working {
+    color: var(--violet);
 }
 
-.project:nth-child(3) .text:hover {
+.project:first-child .text {
+    height: 6rem;  
+}
+
+.project:first-child:hover {
+    height: 50rem;  
+}
+
+.project:first-child:hover .text {
     height: 9rem;
     overflow: visible;
     transition: all 0.3s ease-in-out;
-}
+} 
 
 .project .tag {
     bottom: 0;
@@ -113,6 +121,26 @@
 
 .project .tag .bootstrap {
     color: #553c7b;
+}
+
+.project .tag .tailwind {
+    color: #38BDF8;
+}
+
+.project .tag .symfony {
+    color: #000000;
+}
+
+.project .tag .symfony:hover {
+    color: var(--white);
+    background-color: #000000;
+    border: 0.2rem solid #000000;
+}
+
+.project .tag .tailwind:hover {
+    color: var(--white);
+    background-color: #38BDF8;
+    border: 0.2rem solid #38BDF8;
 }
 
 .project .tag .bootstrap:hover {
@@ -270,7 +298,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1280px) and (orientation: portrait) {
     #portfolio,
     #skills {
         width: 90%;
@@ -295,7 +323,6 @@
     .filter-button,
     .filter-skills-button {
         width: 28%;
-        /* height: 3rem; */
         font-size: 0.8rem;
         padding: 0.4rem;
         margin: 0;
@@ -333,9 +360,88 @@
         height: 6rem;
     }
 
-    /* .card img {
-        scale: 0.5;
-    } */
+    .project .tag * {
+        font-size: 0.6rem;
+        margin-right: 0.5rem;
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait){
+    #portfolio,
+    #skills {
+        width: 90%;
+    }
+
+    #skills h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .filter,
+    .filter-skills {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .filter-button,
+    .filter-skills-button {
+        width: 28%;
+        font-size: 0.8rem;
+        padding: 0.4rem;
+        margin: 0;
+    }
+
+    .project,
+    .frontend-card,
+    .backend-card,
+    .environment-card {
+        width: 100%;
+        height: 80vh;
+        font-size: 0.8rem;
+    }
+
+    .project:first-child {
+        height: 57em;  
+    }
+
+    .project:first-child:hover {
+        height: 57em;  
+    }
+    
+    .project:first-child .text {
+        height: 9rem;
+        overflow: visible;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .skill {
+        height: 60vh;
+    }
+
+    .skill h3 {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+    }
+
+    .progress-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-right: auto;
+        margin-left: auto;
+        height: 50vh;
+    }
+
+    .progress-card .card {
+        width: 6rem;
+        height: 6rem;
+    }
 
     .project .tag * {
         font-size: 0.6rem;
@@ -370,7 +476,6 @@
     .filter-button,
     .filter-skills-button {
         width: 28%;
-        /* height: 3rem; */
         font-size: 0.8rem;
         padding: 0.4rem;
         margin: 0;
@@ -388,6 +493,10 @@
         margin-left: auto;
         margin-right: auto;
         font-size: 0.8rem;
+    }
+
+    .project:hover {
+        height: 70vh;
     }
 
     video {
@@ -408,7 +517,6 @@
     .progress-card {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        /* width: 65vw; */
         margin-right: auto;
         margin-left: auto;
         width: 90%;
@@ -453,7 +561,6 @@
     .filter-button,
     .filter-skills-button {
         width: 28%;
-        /* height: 3rem; */
         font-size: 0.8rem;
         padding: 0.4rem;
         margin: 0;
@@ -473,6 +580,14 @@
         font-size: 0.8rem;
     }
 
+    .project:first-child .text {
+        height: 6rem;  
+    }
+    
+    .project:first-child:hover {
+        height: 70vh;  
+    }
+
     video {
         float: left;
         width: 40%;
@@ -487,7 +602,6 @@
     .hardskills {
         display: flex;
         flex-direction: column;
-        /* width: 90vw; */
     }
 
     .skill {
