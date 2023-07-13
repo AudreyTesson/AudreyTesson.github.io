@@ -55,20 +55,10 @@
     height: 8.5rem;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1280px) and (orientation: portrait) {
+@media (max-width: 480px) {
     #reviews {
         width: 90%;
     }
-/* 
-    .review {
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-left: auto;
-        margin-right: auto;
-    } */
 
     .reviews {
         width: 100%;
@@ -87,7 +77,29 @@
 
 }
 
-@media screen and (max-width: 768px) and (orientation: portrait){
+@media screen and (min-width: 769px) and (max-width: 1280px) and (orientation: portrait) {
+    #reviews {
+        width: 90%;
+    }
+
+    .reviews {
+        width: 100%;
+        height: 80vh;
+        font-size: 0.8rem;
+    }
+
+    .reviews{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-right: auto;
+        margin-left: auto;
+        height: 50vh;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
     #reviews {
         width: 90%;
     }
