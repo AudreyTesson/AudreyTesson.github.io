@@ -4,7 +4,8 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: -4em;
-    background-color: var(--violet);
+    /* background-color: var(--violet); */
+    background-image: linear-gradient(to right top, #6e07f3, #8336f5, #9652f7, #a76bf8, #b683f9);
     padding: 1rem;
     border-radius: 1.4rem;
     display: flex;
@@ -87,7 +88,7 @@
 
 .dynamic-txts li {
     list-style: none;
-    color: #fc6d6d;
+    color: var(--black1);
     font-size: 1.7rem;
     font-weight: 500;
     position: relative;
@@ -114,8 +115,9 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background: var(--violet);
-    border-left: 2px solid #fc6d6d;
+    /* background: #9652f7; */
+    background: linear-gradient(to right top, #9c5af8, #9f60f7);  
+    border-left: 2px solid ;
     animation: typing 3s steps(10) infinite;
 }
 
