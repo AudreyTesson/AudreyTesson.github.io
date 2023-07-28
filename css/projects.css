@@ -1,6 +1,10 @@
 .project-page {
-    margin-right: 10rem;
-    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
 }
 
 .project-page header {
@@ -10,14 +14,10 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    border-bottom: 0.2rem solid;
-    border-color: var(--black1);
-}
-
-.project-page h1 {
-    font-size: 3rem;
-    text-align: center;
-    padding: 1rem;
+    border: 0.2rem solid;
+    /* background-color: var(--white); */
+    border-radius: 1.4rem;
+    border-color: var(--violet);
 }
 
 .project-page button {
@@ -32,7 +32,12 @@
 }
 
 .project-page button:hover {
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 20%);
+    transform: translateY(-0.25rem);
+    border: 0.2rem solid var(--violet);
     background-color: var(--violet);
+    transition: 0.3s;
+    color: var(--white);
 }
 
 .project-page button a {
@@ -44,25 +49,59 @@
     color: var(--white);
 }
 
+.project-page h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    /* color: var(--white); */
+}
+
+.project-page h1 a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.project-page .summary {
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+}
+
 #video {
-    position: relative;
-    margin: 0 auto;
-    width: 50%;
-    height: 40vh;
+    /* position: relative; */
+    margin: auto;
+    /* width: 60%; */
+    /* height: ; */
 }
 
 #description {
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 0 auto;
-    width: 50%;
+    /* width: 60%; */
+}
+
+#description h2 {
+    padding: 1.4rem;
+}
+
+#description p {
+    padding-bottom: 1rem;
 }
 
 .project-page .tag {
     /* bottom: 0; */
-    padding: 1rem 0;
+    padding: 1.4rem 0;
+    /* padding-bottom: 0.5rem; */
     /* position: absolute; */
     display: flex;
     cursor: default;
+}
+
+.project-page .tag *:hover {
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 20%);
+    transform: translateY(-0.25rem);
+    transition: 0.3s;
+    color: var(--white);
 }
 
 .project-page .tag * {
