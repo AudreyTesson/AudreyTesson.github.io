@@ -1,0 +1,174 @@
+.project-page {
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
+.project-page header {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-bottom: 0.2rem solid;
+    border-color: var(--black1);
+}
+
+.project-page h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.project-page button {
+    align-self: flex-start;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 0.2rem solid;
+    border-radius: 1.4rem;
+    /* background-color: var(--black1); */
+    color: var(--violet);
+}
+
+.project-page button:hover {
+    background-color: var(--violet);
+}
+
+.project-page button a {
+    text-decoration: none;
+    color: var(--violet);
+}
+
+.project-page button:hover a {
+    color: var(--white);
+}
+
+#video {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    height: 40vh;
+}
+
+#description {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.project-page .tag {
+    /* bottom: 0; */
+    padding: 1rem 0;
+    /* position: absolute; */
+    display: flex;
+    cursor: default;
+}
+
+.project-page .tag * {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 0.2rem solid;
+    border-radius: 1.4rem;
+    font-size: normal;
+}
+
+.project-page .tag .javascript {
+    color: #f0db4f;
+}
+
+.project-page .tag .javascript:hover {
+    color: #fff;
+    background-color: #f0db4f;
+    border: 0.2rem solid #f0db4f;
+}
+
+.project-page .tag .bootstrap {
+    color: #553c7b;
+}
+
+.project-page .tag .tailwind {
+    color: #38BDF8;
+}
+
+.project-page .tag .symfony {
+    color: #000000;
+}
+
+.project-page .tag .symfony:hover {
+    color: var(--white);
+    background-color: #000000;
+    border: 0.2rem solid #000000;
+}
+
+.project-page .tag .tailwind:hover {
+    color: var(--white);
+    background-color: #38BDF8;
+    border: 0.2rem solid #38BDF8;
+}
+
+.project-page .tag .bootstrap:hover {
+    color: var(--white);
+    background-color: #553c7b;
+    border: 0.2rem solid #553c7b;
+}
+
+.project-page .tag .laravel {
+    color: #f05340;
+}
+
+.project-page .tag .laravel:hover {
+    color: var(--white);
+    background-color: #f05340;
+}
+
+
+.project-page .tag .blade {
+    color: #e42d27;
+}
+
+.project-page .tag .blade:hover {
+    color: var(--white);
+    background-color: #e42d27;
+    border: 0.2rem solid #e42d27;
+}
+
+.project-page .tag .php {
+    color: #787cb5;
+}
+
+.project-page .tag .php:hover {
+    color: var(--white);
+    background-color: #787cb5;
+    border: 0.2rem solid #787cb5;
+}
+
+.project-page .tag .phpmyadmin {
+    color: #f89c0e;
+}
+
+.project-page .tag .phpmyadmin:hover {
+    color: var(--white);
+    background-color: #f89c0e;
+    border: 0.2rem solid #f89c0e;
+}
+
+.project-page .tag .mysql {
+    color: #00758f;
+}
+
+.project-page .tag .mysql:hover {
+    color: var(--white);
+    background-color: #00758f;
+    border: 0.2rem solid #00758f;
+}
+
+.project-page .tag .api {
+    color: var(--black1);
+}
+
+.project-page .tag .api:hover {
+    color: var(--white);
+    background-color: var(--black1);
+    border: 0.2rem solid var(--black1);
+}
