@@ -1,6 +1,13 @@
-# AudreyTesson.github.io
+<h1 align="center">Welcome to AudreyTesson.github.io 👋</h1>
+<p>
+</p>
 
-- removed CV resume section
-- todo: responsive navbar 
-- change btn in timeline, modify text & boxsizes
-- add portfolio section + download CV btn
+> Portfolio
+
+## Author
+
+👤 **AudreyTesson**
+
+* Website: https://audreytesson.github.io/
+* Github: [@AudreyTesson](https://github.com/AudreyTesson)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/audrey-tesson-dev\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/audrey-tesson-dev\/)
