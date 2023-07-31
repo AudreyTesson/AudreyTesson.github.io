@@ -76,6 +76,7 @@
     font-size: 3rem;
     color: var(--violet);
     padding-top: 1.0rem;
+    /* text-transform: none; */
     /* padding-bottom: 20px; */
 }
 
