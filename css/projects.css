@@ -91,7 +91,7 @@
 }
 
 #description p {
-    padding-bottom: 1rem;
+    padding: 0;
 }
 
 #description span  {

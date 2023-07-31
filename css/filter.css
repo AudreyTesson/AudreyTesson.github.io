@@ -59,7 +59,7 @@ button:hover,
     flex-direction: column;
     position: relative;
     width: 49%;
-    height: 35rem;
+    height: 33rem;
     /* padding: 1rem; */
     border-radius: 1.4rem;
     background-color: #fff;
@@ -82,7 +82,7 @@ button:hover,
 
 .project .text {
     padding: 0.5rem 0;
-    height: 8.5rem;
+    height: 5rem;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     padding: 1rem;
@@ -93,7 +93,8 @@ button:hover,
     position: absolute;
     bottom: 0.4rem;
     padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.8rem;
     border-radius: 1.4rem;
     border: 0.2rem solid var(--violet);
     background-color: var(--violet);
