@@ -32,10 +32,12 @@
 .review h3 {
     display: flex;
     justify-content: center;
-    font-weight: 600;
+    align-items: center;
+    height: 4rem;
+    background-image: linear-gradient(to right top, #6e07f3, #8336f5, #9652f7, #a76bf8, #b683f9);
+    border-radius: 1rem 1rem 0 0;
     font-size: 1.4rem;
     color: var(--white);
-    align-items: center;
 }
 
 .review:hover {

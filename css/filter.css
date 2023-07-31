@@ -60,7 +60,7 @@ button:hover,
     position: relative;
     width: 49%;
     height: 35rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 1.4rem;
     background-color: #fff;
     border: 0.2rem solid var(--white);
@@ -70,11 +70,14 @@ button:hover,
 
 .project h3,
 .hardskills h3 {
-    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-image: linear-gradient(to right top, #6e07f3, #8336f5, #9652f7, #a76bf8, #b683f9);
+    border-radius: 1rem 1rem 0 0;
     font-size: 1.4rem;
-    padding: 0 0 1rem 0;
-    text-align: center;
-    color: var(--violet);
+    color: var(--white);
 }
 
 .project .text {
@@ -82,12 +85,13 @@ button:hover,
     height: 8.5rem;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    padding: 1rem;
+
 }
 
 .project button {
     position: absolute;
     bottom: 0.4rem;
-    /* margin-top: auto; */
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
     border-radius: 1.4rem;
