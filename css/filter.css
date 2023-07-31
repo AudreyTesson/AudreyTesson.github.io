@@ -30,7 +30,6 @@
 }
 
 button:hover,
-/* .filter-skills-button:hover, */
 .project button:hover {
     box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 20%);
     transform: translateY(-0.25rem);
@@ -145,12 +144,26 @@ button:hover,
     justify-content: space-evenly;
 }
 
+.skill {
+    padding: 0;
+}
+
 .skill .card {
     width: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+}
+
+.skill .header h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: var(--white);
+    align-items: center;
 }
 
 .skill img {

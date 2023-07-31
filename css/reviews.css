@@ -22,7 +22,6 @@
     position: relative;
     width: 49%;
     height: 35rem;
-    padding: 1rem;
     border-radius: 1.4rem;
     background-color: #fff;
     border: 0.2rem solid var(--white);
@@ -31,11 +30,12 @@
 }
 
 .review h3 {
+    display: flex;
+    justify-content: center;
     font-weight: 600;
     font-size: 1.4rem;
-    padding: 0 0 1rem 0;
-    text-align: center;
-    color: var(--violet);
+    color: var(--white);
+    align-items: center;
 }
 
 .review:hover {
@@ -46,13 +46,11 @@
 
 .review-title {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
-    margin-top: 1.5rem; 
+    padding: 1.4rem 1rem;
 }
 
 .review .text {
-    padding: 0.5rem 0;
-    height: 8.5rem;
+    padding: 0 1rem;
 }
 
 @media (max-width: 1024px) {
