@@ -1,24 +1,45 @@
 const filterButtons = document.querySelectorAll(".filter-button");
 const projects = document.querySelectorAll(".project");
 
+function initializeDefaultFilter() {
+  const defaultFilter = "important";
+  filterButtons.forEach((button) => {
+    if (button.dataset.filter === defaultFilter) {
+      button.classList.add("active");
+    }
+  });
+
+  projects.forEach((project) => {
+    if (defaultFilter === "all") {
+      project.style.display = "block";
+    } else {
+      project.classList.contains(defaultFilter)
+        ? (project.style.display = "block")
+        : (project.style.display = "none");
+    }
+  });
+}
+
+initializeDefaultFilter();
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
 
-    // Change active button
     filterButtons.forEach((button) => {
       button.classList.remove("active");
     });
     button.classList.add("active");
 
-    // Filter projects
     projects.forEach((project) => {
       if (filter === "all") {
         project.style.display = "block";
       } else {
-        project.classList.contains(filter)
-          ? (project.style.display = "block")
-          : (project.style.display = "none");
+        if (project.classList.contains(filter)) {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
       }
     });
   });
