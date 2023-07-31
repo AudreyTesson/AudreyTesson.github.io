@@ -95,9 +95,13 @@
     box-shadow: 0 7px 25px rgba(0,0,0,8%);
 }
 
-.topbtn:hover {
+.topbtn i {
+    color: var(--violet);
+}
+
+.topbtn i:hover {
     background: var(--blue);
-    color: var(--white);
+    color: var(--violet2);
 }
 
 .user {

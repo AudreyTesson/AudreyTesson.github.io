@@ -104,7 +104,7 @@
 .profile-data .card:hover .details,
 .profile-data .card:hover .details a,
 .profile-data .card:hover .iconBx  {
-    color: var(--violet);
+    color: var(--violet2);
 }
 
 .profile-data .card {

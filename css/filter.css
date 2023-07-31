@@ -19,7 +19,7 @@
 .filter-button,
 .filter-skills-button {
     font-size: 1rem;
-    margin: 0 1rem;
+    margin: 0 1rem 1rem;
     padding: 0.5rem 1rem;
     border-radius: 1.4rem;
     background-color: var(--violet);
