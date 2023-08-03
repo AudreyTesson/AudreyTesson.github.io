@@ -285,9 +285,27 @@ button:hover,
     .frontend-card,
     .backend-card,
     .environment-card {
-        width: 100%;
-        height: 50vh;
+        width: 90vw;
+        height: 60%;
         font-size: 0.8rem;
+    }
+
+    .project .text {
+        /* display: none; */
+        visibility: hidden;
+    }
+
+    .skill .progress-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0.5rem;
+    }
+
+    .contact {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* .skill {
