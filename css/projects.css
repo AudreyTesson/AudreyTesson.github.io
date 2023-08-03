@@ -223,3 +223,28 @@
     background-color: var(--black1);
     border: 0.2rem solid var(--black1);
 }
+
+@media only screen and (max-width: 768px) {
+    .project-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-page header {
+        width: 90vw;
+    }
+
+    .project-page header h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-page header p {
+        font-size: 1rem;
+    }
+
+    .project-page header .tag {
+        display: none;
+    }
+}
