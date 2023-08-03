@@ -281,27 +281,13 @@ button:hover,
         margin: 0;
     }
 
-    /* .project,
+    .project,
     .frontend-card,
     .backend-card,
     .environment-card {
         width: 100%;
-        height: 55vh;
+        height: 50vh;
         font-size: 0.8rem;
-    } */
-
-    .project:first-child {
-        height: 57vh;  
-    }
-
-    .project:first-child:hover {
-        height: 57em;  
-    }
-    
-    .project:first-child .text {
-        height: 9rem;
-        overflow: hidden;
-        transition: all 0.3s ease-in-out;
     }
 
     /* .skill {
