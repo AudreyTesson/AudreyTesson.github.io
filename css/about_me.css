@@ -142,7 +142,7 @@
     }
 
     .about_me .details h3 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .wrapper .static-txt {
@@ -154,6 +154,6 @@
     }
 
     .about_me .details p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
