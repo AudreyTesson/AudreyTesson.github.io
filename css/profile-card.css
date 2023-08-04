@@ -76,8 +76,6 @@
     font-size: 3rem;
     color: var(--violet);
     padding-top: 1.0rem;
-    /* text-transform: none; */
-    /* padding-bottom: 20px; */
 }
 
 .profile-card .profile-content .profile-details h3 {
@@ -241,5 +239,18 @@
 
     .profile-card .profile-content .profile-details h3 {
         font-size: 1.5rem;
+    }
+
+    .profile-card .profile-content .profile-details {
+        padding: 1.4rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+        transform: translateY(295px);
+    }
+    
+    .profile-card:hover .profile-content .profile-details {
+        transform: translateY(-20px);
     }
 }

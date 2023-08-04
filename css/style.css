@@ -70,6 +70,10 @@ p {
     .status.inprogress {
         white-space: nowrap;
     }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
