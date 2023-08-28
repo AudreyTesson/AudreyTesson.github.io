@@ -203,7 +203,9 @@ button:hover,
 
 @media screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait) {
     #portfolio,
-    #skills {
+    #skills,
+    #certificates 
+    {
         width: 90%;
     }
 
@@ -213,7 +215,9 @@ button:hover,
     }
 
     .filter,
-    .filter-skills {
+    .filter-skills,
+    .filter-certificates
+    {
         width: 90%;
         display: flex;
         flex-wrap: wrap;
@@ -224,7 +228,9 @@ button:hover,
     }
 
     .filter-button,
-    .filter-skills-button {
+    .filter-skills-button,
+    .filter-certificates-button
+    {
         width: 28%;
         font-size: 0.8rem;
         padding: 0.4rem;
@@ -234,7 +240,12 @@ button:hover,
     .project,
     .frontend-card,
     .backend-card,
-    .environment-card {
+    .environment-card,
+    .certificate,
+    .backend-cert,
+    .frontend-cert,
+    .environment-cert 
+    {
         width: 100%;
         height: 60vh;
         font-size: 1rem;
@@ -249,7 +260,8 @@ button:hover,
         padding-bottom: 0;
     } */
 
-    .progress-card {
+    .progress-card,
+    .progress-card-cert {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
@@ -272,12 +284,16 @@ button:hover,
 
 @media screen and (max-width: 767px) and (orientation: portrait){
     #portfolio,
-    #skills {
+    #skills,
+    #certificates 
+    {
         width: 90%;
     }
 
     .filter,
-    .filter-skills {
+    .filter-skills,
+    .filter-certificates
+    {
         width: 90%;
         display: flex;
         flex-wrap: wrap;
@@ -288,7 +304,9 @@ button:hover,
     }
 
     .filter-button,
-    .filter-skills-button {
+    .filter-skills-button,
+    .filter-certificates-button
+    {
         width: 28%;
         font-size: 0.8rem;
         padding: 0.4rem;
@@ -298,7 +316,12 @@ button:hover,
     .project,
     .frontend-card,
     .backend-card,
-    .environment-card {
+    .environment-card,
+    .certificate,
+    .backend-cert,
+    .frontend-cert,
+    .environment-cert
+    {
         width: 90vw;
         height: 60%;
         font-size: 0.8rem;
@@ -308,7 +331,9 @@ button:hover,
         visibility: hidden;
     }
 
-    .skill .progress-card {
+    .skill .progress-card,
+    .certificate .progress-card 
+    {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -329,7 +354,9 @@ button:hover,
     }
 
     .filter,
-    .filter-skills {
+    .filter-skills,
+    .filter-certificates
+    {
         width: 90%;
         display: flex;
         flex-wrap: wrap;
@@ -340,7 +367,9 @@ button:hover,
     }
 
     .filter-button,
-    .filter-skills-button {
+    .filter-skills-button,
+    .filter-certificates-button
+    {
         width: 28%;
         font-size: 0.8rem;
         padding: 0.4rem;
@@ -414,7 +443,9 @@ button:hover,
     } */
 
     .filter,
-    .filter-skills {
+    .filter-skills,
+    .filter-certificates 
+    {
         width: 90%;
         display: flex;
         flex-wrap: wrap;
@@ -425,7 +456,9 @@ button:hover,
     }
 
     .filter-button,
-    .filter-skills-button {
+    .filter-skills-button, 
+    .filter-certificates-button
+    {
         width: 28%;
         font-size: 0.8rem;
         padding: 0.4rem;
@@ -464,27 +497,6 @@ button:hover,
         margin-left: auto;
         overflow: auto;
     }
-
-    /* .hardskills {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .skill {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80vw;
-        margin-right: auto;
-        margin-left: auto;
-        height: 33vh;
-    }
-
-    .progress-card {
-        margin-right: auto;
-        margin-left: auto;
-        grid-template-columns: repeat(4, 1fr);
-    } */
 
     .project .tag {
         right: 0.5rem;
