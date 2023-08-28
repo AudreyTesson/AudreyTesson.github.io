@@ -70,3 +70,29 @@ filterSkillsButtons.forEach((button) => {
     });
   });
 });
+
+const filterCertificatesButtons = document.querySelectorAll(".filter-certificates-button");
+const certificates = document.querySelectorAll(".certificate");
+
+filterCertificatesButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    // Change active button
+    filterCertificatesButtons.forEach((button) => {
+      button.classList.remove("active");
+    });
+    button.classList.add("active");
+
+    // Filter skills
+    certificates.forEach((certificate) => {
+      if (filter === "all") {
+        certificate.style.display = "flex";
+      } else {
+        certificate.classList.contains(filter)
+          ? (certificate.style.display = "flex")
+          : (certificate.style.display = "none");
+      }
+    });
+  });
+});

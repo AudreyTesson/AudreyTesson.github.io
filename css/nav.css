@@ -134,6 +134,10 @@
     #navigation ul {
         display: none;
     }
+
+    #navigation {
+        display: none;
+    }
     
     .toggle {
         display: flex;

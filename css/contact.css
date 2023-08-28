@@ -36,3 +36,12 @@
 .contact a:hover {
     color: var(--violet2);
 }
+
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    .contact {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
